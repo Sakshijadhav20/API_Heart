@@ -10,7 +10,7 @@ app = Flask(__name__)
 def home():
     return "Heart Disease Prediction App"
 
-@app.route('/predict',methods=['POST'])
+@app.route('/predict',methods=['GET'])
 
 #'cp','thalach','slope','restecg','chol','trestbps','fbs','oldpeak'
 #[0,108,1,0,250,160,1,1.5] 0

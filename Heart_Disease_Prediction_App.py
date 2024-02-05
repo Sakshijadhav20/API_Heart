@@ -26,7 +26,7 @@ def predict():
     fbs = request.form.get('fbs')
     oldpeak = request.form.get('oldpeak')
 
-    #result = {'cp':cp,'thalach':thalach,'slope':slope,'restecg':restecg,'chol':chol,'trestbps':trestbps,'fbs':fbs,'oldpeak':oldpeak}
+    result = {'cp':cp,'thalach':thalach,'slope':slope,'restecg':restecg,'chol':chol,'trestbps':trestbps,'fbs':fbs,'oldpeak':oldpeak}
 
     input_query = np.array([[cp,thalach,slope,restecg,chol,trestbps,fbs,oldpeak]])
 
